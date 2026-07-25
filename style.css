@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /*background-image: url('images/wii_menu2.jpg'); */
+    background-size: cover;       
+    background-position: center;  
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    color: #000000; 
+    margin: 0;
+    font-family: sans-serif; /* O la tipografía que prefieras */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    /* CAMBIA ESTO: De 3/1 a 1/1 para que sea cuadrado */
+    aspect-ratio: 3 / 1; 
+
+    /* AÑADE ESTO: Evita que el padding rompa o transparente el fondo */
+    box-sizing: border-box;
+
+    /* AÑADE ESTO: Centra el emoji y el texto dentro del cuadrado */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Separa el emoji del texto */
+
+    /* CAMBIA ESTO: Baja un poco el padding para dar espacio al contenido */
+    padding: 15px;
+
+    /* TUS ESTILOS ORIGINALES (Están perfectos, déjalos igual) */
+    background-color: white;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+}
+
+.icono {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 45px;
+}
+
+.card h2 {
+    margin: 0;
+}
+
+.icono-card {
+    width: 100%;          
+    height: 100px;         
+    object-fit: cover;    
+    border-radius: 10%; /* Hace la foto redonda */
+}
+
+/* Estilos para el nuevo bloque de perfil superior */
+.perfil-superior {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 20px; 
+    max-width: 400px;
+    margin: 40px auto 20px auto; 
+    
+    /* --- NUEVOS AJUSTES DE FONDO Y BORDES --- */
+    background-color: white; /* Color de fondo gris oscuro (cámbialo si quieres) */
+    border-radius: 16px;       /* Redondeado de los bordes del contenedor */
+    padding: 60px 40px;             /* Espacio interno para que el texto no toque los bordes */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave para darle relieve */
+    
+    text-align: left; 
+}
+
+.tv_container {
+    background-image: url('images/wii_menu2.jpg');
+    background-size: 100% 100%; /* Se estira a lo alto y ancho para cubrir todo */
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    max-width: 10000px; /* Ancho máximo para que no se deforme la cámara en PC */
+    margin: 40px auto; /* Centra la cámara en la pantalla */
+    
+    /* Colchón interno obligatorio para que nada toque los bordes del dibujo */
+    padding-top: 80px;     /* Aumenta si el texto queda muy arriba del marco */
+    padding-bottom: 300px;  /* Aumenta si las tarjetas se salen por abajo */
+    padding-left: 20px;    /* Aumenta si el contenido toca el borde izquierdo */
+    padding-right: 20px;   /* Aumenta si el contenido toca el borde derecho */
+    box-sizing: border-box;
+    
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+.perfil-foto {
+    width: 40%; /* Tamaño de la foto */
+    height: 40%;
+    border-radius: 50%; /* Hace la foto completamente redonda */
+    object-fit: cover; /* Evita que la imagen se deforme al recortarse */
+    border: 3px solid #ffffff; /* Opcional: un borde blanco elegante */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.perfil-texto h2 {
+    margin: 0 0 5px 0;
+    font-size: 1.5rem;
+}
+
+.perfil-texto p {
+    margin: 0;
+    font-size: 0.95rem;
+    opacity: 0.8; /* Hace el texto secundario un poco más suave */
+    line-height: 1.4;
+}
+
+/* Ajuste responsivo para pantallas muy pequeñas (móviles) */
+@media (max-width: 768px) {
+    body {
+        /* Al entrar desde el móvil, el navegador cambia la foto por esta otra */
+        background-image: url('images/wii_vertical.jpg'); /* Tu imagen vertical */
+        background-attachment: scroll; /* En móviles es mejor usar scroll para mejorar el rendimiento */
+    }
+}
