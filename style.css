@@ -3,7 +3,7 @@
 }
 
 body {
-    /*background-image: url('images/wii_menu2.jpg'); */
+    background-image: url('images/wii_menu2.jpg');
     background-size: cover;       
     background-position: center;  
     background-attachment: fixed; 
@@ -19,16 +19,21 @@ h1 {
 }
 
 .contenedor {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    padding-top: 100px;
 
-    gap: 20px;
-    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+
+    row-gap: 20px;
+    column-gap: 0px;
+
+    width: 85%;
+    max-width: none;
     margin: 0 auto;
 }
 
 .card {
-    /* CAMBIA ESTO: De 3/1 a 1/1 para que sea cuadrado */
+    width: 80%;
     aspect-ratio: 3 / 1; 
 
     /* AÑADE ESTO: Evita que el padding rompa o transparente el fondo */
@@ -39,6 +44,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    justify-self: center;
     gap: 10px; /* Separa el emoji del texto */
 
     /* CAMBIA ESTO: Baja un poco el padding para dar espacio al contenido */
@@ -95,27 +101,6 @@ h1 {
     text-align: left; 
 }
 
-.tv_container {
-    background-image: url('images/wii_menu2.jpg');
-    background-size: 100% 100%; /* Se estira a lo alto y ancho para cubrir todo */
-    background-repeat: no-repeat;
-    background-position: center;
-    
-    max-width: 10000px; /* Ancho máximo para que no se deforme la cámara en PC */
-    margin: 40px auto; /* Centra la cámara en la pantalla */
-    
-    /* Colchón interno obligatorio para que nada toque los bordes del dibujo */
-    padding-top: 80px;     /* Aumenta si el texto queda muy arriba del marco */
-    padding-bottom: 300px;  /* Aumenta si las tarjetas se salen por abajo */
-    padding-left: 20px;    /* Aumenta si el contenido toca el borde izquierdo */
-    padding-right: 20px;   /* Aumenta si el contenido toca el borde derecho */
-    box-sizing: border-box;
-    
-    border-radius: 24px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-}
-
-
 .perfil-foto {
     width: 40%; /* Tamaño de la foto */
     height: 40%;
@@ -140,8 +125,17 @@ h1 {
 /* Ajuste responsivo para pantallas muy pequeñas (móviles) */
 @media (max-width: 768px) {
     body {
-        /* Al entrar desde el móvil, el navegador cambia la foto por esta otra */
-        background-image: url('images/wii_vertical.jpg'); /* Tu imagen vertical */
-        background-attachment: scroll; /* En móviles es mejor usar scroll para mejorar el rendimiento */
+        background-image: url('images/wii_vertical.jpg');
+        background-attachment: scroll;
+    }
+
+    .contenedor {
+        grid-template-columns: repeat(2, 50%);
+        width: 100%;
+    }
+
+    .card {
+        width: 90%;
+        justify-self: center;
     }
 }
