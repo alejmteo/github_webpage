@@ -125,17 +125,28 @@ h1 {
 /* Ajuste responsivo para pantallas muy pequeñas (móviles) */
 @media (max-width: 768px) {
     body {
-        background-image: url('images/wii_vertical.jpg');
+        background-image: url('./images/wii_vertical.jpg');
         background-attachment: scroll;
     }
 
     .contenedor {
-        grid-template-columns: repeat(2, 50%);
+        grid-template-columns: repeat(4, 1fr);
         width: 100%;
+        gap: 10px;
+        padding: 80px 10px 0;
     }
 
     .card {
         width: 90%;
         justify-self: center;
+        padding: 8px;
+    }
+
+    .icono-card {
+        height: 55px;
+    }
+
+    .card h2 {
+        font-size: 0.75rem;
     }
 }
