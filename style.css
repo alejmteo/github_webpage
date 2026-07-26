@@ -144,7 +144,7 @@ h1 {
         gap: 10px;
         width: 100%;
         padding: 150px 10px 20px;
-        row-gap: 10px;
+        row-gap: 30px;
     }
 
     .card {
@@ -152,7 +152,7 @@ h1 {
         aspect-ratio: 2.5 / 1;
         height: auto;          
         justify-self: center;
-        padding: 4px 7px 0px 7px;
+        padding: 4px 7px 5px 7px;
     }
 
     .icono-card {
@@ -164,7 +164,7 @@ h1 {
     }
 
     .card h2 {
-        min-height: 32px;
+        min-height: 20px;
         margin: 0;
 
         display: flex;
