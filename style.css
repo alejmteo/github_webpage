@@ -164,7 +164,7 @@ h1 {
     }
 
     .card h2 {
-        min-height: 20px;
+        min-height: 32px;
         margin: 0;
 
         display: flex;
