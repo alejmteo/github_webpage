@@ -125,7 +125,7 @@ h1 {
 /* Ajuste responsivo para pantallas muy pequeñas (móviles) */
 @media (max-width: 768px) {
     body {
-        background-image: url('./images/wii_vertical.jpg');
+        background-image: url('./images/wii_vert3.jpg');
         background-attachment: scroll;
     }
 
