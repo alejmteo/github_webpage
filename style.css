@@ -141,15 +141,17 @@ h1 {
 
     .contenedor {
         grid-template-columns: repeat(3, 1fr);
-        width: 100%;
-        padding: 160px 10px 20px;
         gap: 10px;
-        justify-items: center;
+        width: 100%;
+        padding: 70px 10px 20px;
     }
 
     .card {
-        gap: 0;
-
+        width: 90%;
+        aspect-ratio: 3 / 1;
+        height: auto;          /* o elimina la propiedad height */
+        justify-self: center;
+        padding: 8px;
     }
 
     .icono-card {
