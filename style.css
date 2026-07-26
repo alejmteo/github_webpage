@@ -151,7 +151,7 @@ h1 {
         aspect-ratio: 3 / 1;
         height: auto;          /* o elimina la propiedad height */
         justify-self: center;
-        padding: 8px;
+        padding: 4px 7px 4px 7px;
     }
 
     .icono-card {
