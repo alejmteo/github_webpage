@@ -149,7 +149,7 @@ h1 {
 
     .card {
         width: 90%;
-        aspect-ratio: 3 / 1;
+        aspect-ratio: 2.5 / 1;
         height: auto;          
         justify-self: center;
         padding: 4px 7px 0px 7px;
@@ -161,11 +161,10 @@ h1 {
         object-fit: cover;
 
         margin-top: 8px;
-        margin-bottom: 2px;
     }
 
     .card h2 {
-        min-height: 32px;
+        min-height: 20px;
         margin: 0;
 
         display: flex;
