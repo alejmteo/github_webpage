@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mis redes</title>
+    <title>Ale's Wii Menu</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -40,7 +40,7 @@
             </a>
 
             <a class="card" href="https://steamcommunity.com/profiles/76561199111346851/" target="_blank">
-                <img class="icono-card" src="images/hades.jpeg" alt="Steam">
+                <img class="icono-card" src="images/hades_no_titulo.jpeg" alt="Steam">
                 <h2>Steam</h2>
             </a>
 
@@ -50,15 +50,19 @@
             </a>
 
             <a class="card" href="https://github.com/alejmteo" target="_blank">
-                <img class="icono-card" src="images/github.jpg" alt="GitHub">
+                <img id="github-img" class="icono-card" src="images/github.jpg" alt="GitHub">
                 <h2>GitHub</h2>
             </a>
 
         </div>
 
         <br/>
-        <!-- <h1>Mis redes sociales</h1> -->
 
+    <script>
+        if (window.innerWidth <= 768) {
+            document.getElementById("github-img").src = "images/github_2.jpg";
+        }
+    </script>
 
 </body>
 </html>
