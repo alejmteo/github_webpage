@@ -149,7 +149,7 @@ h1 {
 
     .card {
         width: 90%;
-        aspect-ratio: 2.75 / 1;
+        aspect-ratio: auto;
         height: auto;          
         justify-self: center;
         padding: 4px 7px 8px 7px;
