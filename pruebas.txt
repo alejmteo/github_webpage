@@ -1,9 +1,0 @@
-        <!-- Bloque de perfil con foto y texto -->
-        <div class="perfil-superior">
-            <!-- CAMBIA "tu-foto.jpg" por el nombre exacto de tu archivo de imagen -->
-            <img class="perfil-foto" src="images/mii_pfp.jpeg" alt="Foto de perfil">
-            <div class="perfil-texto">
-                <h2>Ale M.</h2>
-                <p>me gustan las mandarinas</p>
-            </div>
-        </div> 
