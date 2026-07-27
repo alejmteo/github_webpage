@@ -25,4 +25,4 @@ The project recreates the clean and minimal aesthetic of the Nintendo Wii Menu w
 
 ## Live Demo
 
-👉 https://alejmteo.github.io/github_webpage/
+👉 https://alejmteo.github.io/wii_webpage/
